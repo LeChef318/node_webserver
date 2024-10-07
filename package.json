@@ -1,0 +1,21 @@
+{
+  "name": "node_webserver",
+  "version": "1.1.0",
+  "description": "simple node.js webserver application",
+  "main": "server.js",
+  "scripts": {
+    "test": "none yet",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeChef318/node_webserver.git"
+  },
+  "author": "Jan Hoffmann",
+  "license": "MIT",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/LeChef318/node_webserver/issues"
+  },
+  "homepage": "https://github.com/LeChef318/node_webserver#readme"
+}
