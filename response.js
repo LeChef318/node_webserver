@@ -27,7 +27,8 @@ class Response {
         const body = bodyContent || `<h1>${responseMessage}</h1>`;
 
         const headers = {
-            'Content-Length': Buffer.byteLength(body, 'utf-8'), 'Content-Type': contentType || 'text/html',
+            'Content-Length': Buffer.byteLength(body, 'utf-8'),
+            'Content-Type': contentType || 'text/html',
         };
 
         this.socket.write(Buffer.from(`${responseLine}\r\n`))

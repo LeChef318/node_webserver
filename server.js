@@ -54,4 +54,7 @@ async function handleRequest(socket, data) {
 
 const server = createServer();
 server.on('connection', newConnection);
-server.listen({host: '127.0.0.1', port: 4242});
+server.listen({
+    host: '127.0.0.1',
+    port: 4242
+});
