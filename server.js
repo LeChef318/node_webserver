@@ -13,10 +13,14 @@ const allowed_methods = ['GET']
 function newConnection(socket) {
     socket.on('end', function () {
         console.log('EOF')
-    })
+    });
     socket.on('data', function (data) {
         handleRequest(socket, data)
-    })
+    });
+    socket.on('error', (err) => {
+        console.info('Socket error:', err);
+        socket.destroy();
+    });
 }
 
 async function handleRequest(socket, data) {
